@@ -1,0 +1,231 @@
+/*
+LESS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: @icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+@icon-home: x y offset_x offset_y width height total_width total_height image_path name;
+
+At the bottom of this section, we provide information about the spritesheet itself
+@spritesheet: width height image @spritesheet-sprites;
+*/
+@adventure-name: 'adventure';
+@adventure-x: 0px;
+@adventure-y: 46px;
+@adventure-offset-x: 0px;
+@adventure-offset-y: -46px;
+@adventure-width: 26px;
+@adventure-height: 25px;
+@adventure-total-width: 159px;
+@adventure-total-height: 147px;
+@adventure-image: '../../../build/img/sprite.png';
+@adventure: 0px 46px 0px -46px 26px 25px 159px 147px '../../../build/img/sprite.png' 'adventure';
+@daily-news-name: 'daily-news';
+@daily-news-x: 0px;
+@daily-news-y: 91px;
+@daily-news-offset-x: 0px;
+@daily-news-offset-y: -91px;
+@daily-news-width: 26px;
+@daily-news-height: 22px;
+@daily-news-total-width: 159px;
+@daily-news-total-height: 147px;
+@daily-news-image: '../../../build/img/sprite.png';
+@daily-news: 0px 91px 0px -91px 26px 22px 159px 147px '../../../build/img/sprite.png' 'daily-news';
+@enviroment-name: 'enviroment';
+@enviroment-x: 46px;
+@enviroment-y: 46px;
+@enviroment-offset-x: -46px;
+@enviroment-offset-y: -46px;
+@enviroment-width: 25px;
+@enviroment-height: 25px;
+@enviroment-total-width: 159px;
+@enviroment-total-height: 147px;
+@enviroment-image: '../../../build/img/sprite.png';
+@enviroment: 46px 46px -46px -46px 25px 25px 159px 147px '../../../build/img/sprite.png' 'enviroment';
+@go-name: 'go';
+@go-x: 46px;
+@go-y: 91px;
+@go-offset-x: -46px;
+@go-offset-y: -91px;
+@go-width: 22px;
+@go-height: 22px;
+@go-total-width: 159px;
+@go-total-height: 147px;
+@go-image: '../../../build/img/sprite.png';
+@go: 46px 91px -46px -91px 22px 22px 159px 147px '../../../build/img/sprite.png' 'go';
+@kids-name: 'kids';
+@kids-x: 92px;
+@kids-y: 0px;
+@kids-offset-x: -92px;
+@kids-offset-y: 0px;
+@kids-width: 21px;
+@kids-height: 29px;
+@kids-total-width: 159px;
+@kids-total-height: 147px;
+@kids-image: '../../../build/img/sprite.png';
+@kids: 92px 0px -92px 0px 21px 29px 159px 147px '../../../build/img/sprite.png' 'kids';
+@login-name: 'login';
+@login-x: 88px;
+@login-y: 91px;
+@login-offset-x: -88px;
+@login-offset-y: -91px;
+@login-width: 14px;
+@login-height: 16px;
+@login-total-width: 159px;
+@login-total-height: 147px;
+@login-image: '../../../build/img/sprite.png';
+@login: 88px 91px -88px -91px 14px 16px 159px 147px '../../../build/img/sprite.png' 'login';
+@magazine-name: 'magazine';
+@magazine-x: 0px;
+@magazine-y: 0px;
+@magazine-offset-x: 0px;
+@magazine-offset-y: 0px;
+@magazine-width: 26px;
+@magazine-height: 26px;
+@magazine-total-width: 159px;
+@magazine-total-height: 147px;
+@magazine-image: '../../../build/img/sprite.png';
+@magazine: 0px 0px 0px 0px 26px 26px 159px 147px '../../../build/img/sprite.png' 'magazine';
+@photography-name: 'photography';
+@photography-x: 133px;
+@photography-y: 0px;
+@photography-offset-x: -133px;
+@photography-offset-y: 0px;
+@photography-width: 26px;
+@photography-height: 18px;
+@photography-total-width: 159px;
+@photography-total-height: 147px;
+@photography-image: '../../../build/img/sprite.png';
+@photography: 133px 0px -133px 0px 26px 18px 159px 147px '../../../build/img/sprite.png' 'photography';
+@search-icon-name: 'search-icon';
+@search-icon-x: 133px;
+@search-icon-y: 75px;
+@search-icon-offset-x: -133px;
+@search-icon-offset-y: -75px;
+@search-icon-width: 21px;
+@search-icon-height: 21px;
+@search-icon-total-width: 159px;
+@search-icon-total-height: 147px;
+@search-icon-image: '../../../build/img/sprite.png';
+@search-icon: 133px 75px -133px -75px 21px 21px 159px 147px '../../../build/img/sprite.png' 'search-icon';
+@sign-up-name: 'sign-up';
+@sign-up-x: 92px;
+@sign-up-y: 49px;
+@sign-up-offset-x: -92px;
+@sign-up-offset-y: -49px;
+@sign-up-width: 16px;
+@sign-up-height: 16px;
+@sign-up-total-width: 159px;
+@sign-up-total-height: 147px;
+@sign-up-image: '../../../build/img/sprite.png';
+@sign-up: 92px 49px -92px -49px 16px 16px 159px 147px '../../../build/img/sprite.png' 'sign-up';
+@travel-name: 'travel';
+@travel-x: 133px;
+@travel-y: 38px;
+@travel-offset-x: -133px;
+@travel-offset-y: -38px;
+@travel-width: 26px;
+@travel-height: 17px;
+@travel-total-width: 159px;
+@travel-total-height: 147px;
+@travel-image: '../../../build/img/sprite.png';
+@travel: 133px 38px -133px -38px 26px 17px 159px 147px '../../../build/img/sprite.png' 'travel';
+@tv-name: 'tv';
+@tv-x: 46px;
+@tv-y: 0px;
+@tv-offset-x: -46px;
+@tv-offset-y: 0px;
+@tv-width: 26px;
+@tv-height: 26px;
+@tv-total-width: 159px;
+@tv-total-height: 147px;
+@tv-image: '../../../build/img/sprite.png';
+@tv: 46px 0px -46px 0px 26px 26px 159px 147px '../../../build/img/sprite.png' 'tv';
+@video-name: 'video';
+@video-x: 0px;
+@video-y: 133px;
+@video-offset-x: 0px;
+@video-offset-y: -133px;
+@video-width: 26px;
+@video-height: 14px;
+@video-total-width: 159px;
+@video-total-height: 147px;
+@video-image: '../../../build/img/sprite.png';
+@video: 0px 133px 0px -133px 26px 14px 159px 147px '../../../build/img/sprite.png' 'video';
+@spritesheet-width: 159px;
+@spritesheet-height: 147px;
+@spritesheet-image: '../../../build/img/sprite.png';
+@spritesheet-sprites: @adventure @daily-news @enviroment @go @kids @login @magazine @photography @search-icon @sign-up @travel @tv @video;
+@spritesheet: 159px 147px '../../../build/img/sprite.png' @spritesheet-sprites;
+
+/*
+The provided classes are intended to be used with the array-like variables
+
+.icon-home {
+  .sprite-width(@icon-home);
+}
+.icon-email {
+  .sprite(@icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.sprite-width(@sprite) {
+  width: extract(@sprite, 5);
+}
+
+.sprite-height(@sprite) {
+  height: extract(@sprite, 6);
+}
+
+.sprite-position(@sprite) {
+  @sprite-offset-x: extract(@sprite, 3);
+  @sprite-offset-y: extract(@sprite, 4);
+  background-position: @sprite-offset-x @sprite-offset-y;
+}
+
+.sprite-image(@sprite) {
+  @sprite-image: extract(@sprite, 9);
+  @sprite-image-bare: ~`"@{sprite-image}".slice(1, -1)`;
+  background-image: url(@sprite-image-bare);
+}
+
+.sprite(@sprite) {
+  .sprite-image(@sprite);
+  .sprite-position(@sprite);
+  .sprite-width(@sprite);
+  .sprite-height(@sprite);
+}
+
+/*
+The `.sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of LESS
+
+This must be run when you have at least 2 sprites.
+  If run with a single sprite, then there will be reference errors.
+
+.sprites(@spritesheet-sprites);
+*/
+.sprites(@sprites, @i: 1) when (@i <= length(@sprites)) {
+  @sprite: extract(@sprites, @i);
+  @sprite-name: e(extract(@sprite, 10));
+  .@{sprite-name} {
+    .sprite(@sprite);
+  }
+  .sprites(@sprites, @i + 1);
+}
