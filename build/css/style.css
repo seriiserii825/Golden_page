@@ -12,7 +12,8 @@ body {
   font-size: 12px;
   line-height: 18px;
   color: #555;
-  background: url(../img/body-bg.jpg) repeat-x 0 0;
+  background: -webkit-linear-gradient(top, #fff, #f0f0f0);
+  background: linear-gradient(to bottom, #fff, #f0f0f0);
 }
 .container {
   margin: 0 auto;
@@ -33,15 +34,22 @@ a:hover {
 /* page-header
 ================================== */
 .page-header {
-  padding-top: 30px;
+  padding-top: 43px;
 }
 .page-header .logo {
-  margin-bottom: 20px;
+  position: relative;
+  left: 10px;
+  width: 403px;
+  height: 175px;
+  margin: 0 auto;
+  margin-bottom: 7px;
   text-align: center;
+  overflow: hidden;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
-.page-header .logo a {
-  display: inline-block;
-  vertical-align: top;
+.page-header .logo:hover a:first-child {
+  display: none;
 }
 .page-header .menu {
   margin-bottom: 19px;
@@ -75,6 +83,41 @@ a:hover {
 }
 .content-slider {
   width: 100%;
-  margin-bottom: 35px;
-  border-bottom: 23px solid #f0f0f0;
+  margin-bottom: 23px;
+}
+.content-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.content-text h2 {
+  margin-bottom: 18px;
+  font-family: "Times New Roman", serif;
+  font-size: 24px;
+}
+.content .text-item {
+  padding: 30px;
+  background: #fff;
+}
+.content-left {
+  width: 419px;
+}
+.content-right {
+  width: 208px;
+  color: #333;
+}
+.content p {
+  margin-bottom: 20px;
+}
+.page-footer {
+  padding-top: 18px;
+}
+.page-footer p {
+  height: 67px;
+  line-height: 18px;
+  color: #5f5d67;
+  opacity: .5;
 }

@@ -8,13 +8,20 @@
 ================================== */
 
 .page-header{
-	padding-top: 30px; 
+	padding-top: 43px; 
 	.logo{
-		margin-bottom: 20px;
+		position: relative;
+		left: 10px;
+		width: 403px;
+		height: 175px;
+		margin: 0 auto;
+		margin-bottom: 7px;
 		text-align: center;
-		a{
-			.inline-block;
-		}
+		overflow: hidden;
+		transition: all 1s;
+	}
+	.logo:hover a:first-child{
+		display: none;
 	}
 	.menu{
 		margin-bottom: 19px;
@@ -48,9 +55,38 @@
 .content{
 	&-slider{
 		width: 100%;
-		margin-bottom: 35px;
-		border-bottom: 23px solid @borderColor;
+		margin-bottom: 23px;
 	}
 	&-text{
-		
+		display: flex;
+		justify-content: space-between;
+		h2{
+			margin-bottom: 18px;
+			font-family: @times;
+			font-size: @regular + 12px;
+		}	
 	}
+	.text-item{
+		padding: 30px;
+		background: @white;
+	}
+	&-left{
+		width: 419px;
+	}
+	&-right{
+		width: 208px;
+		color: #333;
+	}
+	p{
+		margin-bottom: 20px;
+	}
+}
+.page-footer{
+	padding-top: 18px;
+	p{
+		height: 67px;
+		line-height: 18px;
+		color: @menuColor;
+		opacity: .5;
+	}
+}
