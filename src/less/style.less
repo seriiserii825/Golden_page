@@ -1,26 +1,56 @@
+@import "imports/fonts.less";
 @import "imports/_settings";
 @import "imports/_mixins";
-@import "imports/sprite";
-.icon-adventure{
-	.sprite(@adventure);
-	@media screen and (min-width: 768px){
-		.sprite(@adventure);
+@import "imports/fonts.less";
+@import "imports/variables.less";
+
+/* page-header
+================================== */
+
+.page-header{
+	padding-top: 30px; 
+	.logo{
+		margin-bottom: 20px;
+		text-align: center;
+		a{
+			.inline-block;
+		}
+	}
+	.menu{
+		margin-bottom: 19px;
+		max-width: 754px;
+		font-size: 0;
+		border: 1px solid @borderColor;
+		border-bottom: 3px solid @borderBlue;
+		li{
+			.inline-block;
+			border-right: 1px solid @borderColor;
+		}
+		li:last-of-type{
+			width: 133px;
+			border-right: none;
+		}
+		a{	
+			display: block;
+			padding: 0 29px;
+			height: 33px;
+			line-height: 33px;
+			font-size: @regular + 2;
+			color: @menuColor;
+			background: @white;
+			transition: all .1s ease-in;
+		}
+		a:hover{
+			background: darken(@white, 5%);
+		}
 	}
 }
-.row{
-	&:after{
-		content: "";
-		display: block;
-		clear: both;
+.content{
+	&-slider{
+		width: 100%;
+		margin-bottom: 35px;
+		border-bottom: 23px solid @borderColor;
 	}
-}
-.col{
-	float: left;
-}
- .grid-univers(xs, 2);
- @media screen and (min-width: 768px){
- 	.grid-univers(m, 9);
- }
- @media screen and (min-width: 970px){
- 	.grid-univers(l, 12);
- }
+	&-text{
+		
+	}

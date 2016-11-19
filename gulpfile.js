@@ -87,10 +87,10 @@ gulp.task('server', function(){
 gulp.task('build', [
     'html',
     'css',
-    'css',
     'fonts',
     'image',
     'sprite',
+    'reset'
 ]);
 
 gulp.task('watch', function () {
@@ -99,7 +99,7 @@ gulp.task('watch', function () {
 	gulp.watch(['src/**/*.html'], function (event, cb) {
 		gulp.start('html');
 	});
-	gulp.watch(['src/less/style.less'], function (event, cb) {
+	gulp.watch(['src/**/*.less'], function (event, cb) {
 		gulp.start('css');
 	});
 	gulp.watch(['src/img/**/*.*'], function (event, cb) {
@@ -110,6 +110,9 @@ gulp.task('watch', function () {
 	});
 	gulp.watch(['src/img/icons/**/*.png'], function (event, cb) {
 		gulp.start('sprite:build');
+	});
+	gulp.watch(['src/less/reset.css'], function (event, cb) {
+		gulp.start('reset');
 	});
 });
 
